@@ -48,3 +48,11 @@ def solution(A):
         if A[i + 1] - A[i] > 1:
             return A[i] + 1
     return A[n - 1] + 1
+
+def solution(A):
+    s = set(A)
+    m = max(A) + 2
+    for N in range(1, m):
+        if N not in s:
+            return N
+    return 1
